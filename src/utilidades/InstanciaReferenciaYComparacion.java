@@ -50,6 +50,8 @@ public class InstanciacionReferenciaYComparacion {
         // Tu código aquí ↓
         Pelicula p1 = new Pelicula("Inception", 2010);
         Pelicula p2 = new Pelicula("Inception", 2010);
+        System.out.println(p1);
+        System.out.println(p2);
         System.out.println(p1 == p2);
         System.out.println(p1.equals(p2));
 
@@ -78,7 +80,9 @@ public class InstanciacionReferenciaYComparacion {
         //    Comenta la línea después de probar, porque lanzará un error.
 
         // Tu código aquí ↓
-        
+        Pelicula p3 = null;
+        System.out.println(p3);
+        // p3.getTitulo()
     }
 }
 
@@ -86,21 +90,21 @@ public class InstanciacionReferenciaYComparacion {
 // RESPUESTAS DE REFLEXIÓN
 // ================================
 // Ejercicio 1: ¿Qué diferencia hay entre el constructor por defecto y el parametrizado?
-// Respuesta: ...
+// Respuesta: Que el constructor por defecto no tiene valores predefinidos mientras que el parametrizado permite inicializar el objeto con valores concretos al crearlo.
 
 // Ejercicio 2: ¿Por qué da false al comparar con == dos objetos con los mismos datos?
-// Respuesta: ...
+// Respuesta: Porque estan almacenados en almacenamientos distintos.
 
 // Ejercicio 3: ¿Qué diferencia hay entre == y equals()? ¿Por qué ahora sí devuelve true?
-// Respuesta: ...
+// Respuesta: Porque == compara el almacenamiento donde están los valores mientras que equals compara los valores, porque los valores si son los mismos pero los alamecenamientos en donde se almacenan no.
 
 // Ejercicio 4: ¿Por qué en Pelicula equals no funciona como en Cancion?
-// Respuesta: ...
+// Respuesta: Porque hereda el comportamineto de Object, actuando como ==.
 
 // Ejercicio 5: ¿Qué ocurre cuando modificas el objeto a través de c6? ¿Qué demuestra?
-// Respuesta: ...
+// Respuesta: Que muestra el valor cambiado en c5 tambien. 
 
 // Ejercicio 6: ¿Qué error aparece al acceder a un método de p3 siendo null?
 // ¿Qué significa realmente que una variable valga null?
-// Respuesta: ...
+// Respuesta: NullPointerException, que no referencia a ningún objeto.
 }
