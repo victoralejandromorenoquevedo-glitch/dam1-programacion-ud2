@@ -3,7 +3,7 @@ package utilidades;
 public class DemoMetodos {
 
     // Método void (no devuelve nada)
-    public void saludar() {
+    public static void saludar() {
         System.out.println("Bienvenido a la calculadora!");
     }
 
