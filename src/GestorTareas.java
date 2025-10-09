@@ -41,7 +41,7 @@ public class GestorTareas {
         // Solo muestra el mensaje, no devuelve nada.
 
         // Tu código aquí ↓
-        
+        tarea("Revisar correo", 3);
 
         // ================================
         // EJERCICIO 5: Estado de tareas
@@ -113,6 +113,9 @@ public class GestorTareas {
 
     //4
 
+    public static void tarea(String nombreTarea, int prioridad) {
+    System.out.println("[Prioridad" + prioridad + "]" + nombreTarea);
+    }
 
 
 }
