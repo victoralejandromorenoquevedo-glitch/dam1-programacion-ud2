@@ -114,8 +114,12 @@ public class GestorTareas {
     //4
 
     public static void tarea(String nombreTarea, int prioridad) {
-    System.out.println("[Prioridad" + prioridad + "]" + nombreTarea);
+    System.out.println("[Prioridad " + prioridad + "] " + nombreTarea);
     }
+
+    //5
+
+    
 
 
 }
